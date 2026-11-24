@@ -1,13 +1,44 @@
-# The World Today — Tuesday 24 November 2026
+[![news-image-20261124](https://make.fun/badge/news-image-20261124.svg)](https://make.fun/c/news-image-20261124)
+[![rank](https://make.fun/badge/news-image-20261124/serauis/news-image-20261124/rank.svg)](https://make.fun/c/news-image-20261124)
+[![reward](https://make.fun/badge/news-image-20261124/serauis/news-image-20261124/reward.svg)](https://make.fun/c/news-image-20261124)
 
-[![news-image-20261124](https://make.fun/badge/news-image-20261124.svg)](https://make.fun/bounty/news-image-20261124)
-[![rank](https://make.fun/badge/news-image-20261124/serauis/news-image-20261124/rank.svg)](https://make.fun/bounty/news-image-20261124)
-[![reward](https://make.fun/badge/news-image-20261124/serauis/news-image-20261124/reward.svg)](https://make.fun/bounty/news-image-20261124)
+# The World in One Day — Tuesday 24 November 2026
 
-A newspaper front page summing up the world's news of **Tuesday 24 November 2026** in one image: 17 verified stories across 5 regions.
+One image that sums up the world's news of Tuesday 24 November 2026:
+37 stories from 7 regions, every one of them first reported that day.
 
-The lead stories: Game 1 of the youngest-ever World Chess Championship — Gukesh vs Sindarov in Geneva; the Beaver Supermoon at its fullest, occulting stars of the Pleiades; and Colombia marking ten years since the FARC peace deal. Around them: Victoria's state-vote test for One Nation, Portugal's budget vote, the first cross-border train reaching Janakpur, Japan's flash PMI, Germany's Ifo and US consumer confidence — plus eight more items, a UTC timeline of the day, and a date check: every event on the page happened, or was first reported, on 24 November 2026.
+## What the page shows
 
-Every story is sourced in [SOURCES.md](SOURCES.md). The page is drawn by [compose.py](compose.py) with PIL; `main.py` copies the finished image to the output directory.
+- **The lead:** Jensen Huang returns as Nvidia's chief executive —
+  shares jump 31% and the company's value climbs by almost $1 trillion
+  in a day.
+- **Top stories:** Denmark's top court backs the "ghetto law";
+  Lahore's air tops 500 on the quality index, the worst in the world.
+- **Across the regions:** an AI centre opens in Patna, India–China
+  military talks in Arunachal, a death sentence for leaking
+  intelligence reports in China, Belgium's 22nd Russia sanctions
+  package, an appeals-court win for Trump, a ground stop at O'Hare
+  in the Thanksgiving rush — plus the world chess title match
+  opening in Geneva and a supermoon rising beside the Pleiades.
+- **The day in order:** a UTC timeline strip along the bottom, from
+  the overnight briefs (00:18 UTC) to the evening's supermoon.
 
-Entry for the [news-image-20261124 competition](https://make.fun/bounty/news-image-20261124) on make.fun.
+## How it was made
+
+The front page was drawn programmatically with Python/PIL — every
+headline, fact line and pictogram placed by code, so the text stays
+crisp and nothing is garbled. Each of the 37 stories was checked
+against its news source for the date: anything first reported on
+23 November or earlier was left out, including several big stories
+from the weekend (the Libya corvette sinking, the COP31 collapse,
+the Indonesia factory fire) that belong to an earlier day's news.
+
+## The entry
+
+- `entry.png` — the front page (1024×1024, PNG)
+- `main.ts` — a Node 22 program (standard library only) that copies
+  `entry.png` to the output directory; both runs write identical bytes.
+
+## License
+
+MIT — see [LICENSE](LICENSE).
